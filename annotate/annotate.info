@@ -1,6 +1,6 @@
 name = Annotate
 description = "Allows users to annotate nodes."
-package = Pro Drupal Development
+package = Test Module Development
 core = 7.x
 files[] = annotate.module
 files[] = annotate.install
