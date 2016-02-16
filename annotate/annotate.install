@@ -36,6 +36,6 @@ function annotate_uninstall() {
 function annotate_delete_annotation($type) {
   $instance = field_info_instance('node', 'annotation', $type->type);
   if ($instance) {
-    field_delete_instance($instance);
+    field_delete_instance($instance, false);
   }
 }

@@ -15,7 +15,7 @@
 function annotate_admin_settings() {
   // Get an array of node types with internal names as keys and
   // "friendly names" as values. E.g.,
-  // array('page' => ÕBasic Page, 'article' => 'Articles')
+  // array('page' => ï¿½Basic Page, 'article' => 'Articles')
   $types = node_type_get_types();
   foreach($types as $node_type) {
     $options[$node_type->type] = $node_type->name;
@@ -48,7 +48,7 @@ function annotate_admin_settings() {
     '#size' => 3
   );
   $form['#submit'][] = 'annotate_admin_settings_submit';
-  return system_settings_form($form);
+  return system_settings_form($form, TRUE);
 
 }
 
